@@ -1,3 +1,46 @@
 body {
-  background: blanchedalmond;
+  background: rgb(208, 205, 205);
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+  font-size: 30px;
+}
+
+
+
+.container {
+  display: flex;
+  padding: 2rem;
+  flex-grow: 1;
+  border: 2px solid blue;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+
+.container > div {
+  flex-grow: 1;
+  border: 1px solid gray;
+  background-color: rgb(139, 139, 139);
+  border-radius: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.b {
+  flex-grow: 2;
+}
+
+@media (min-width:600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  div.a {
+    flex: 1 1 100%;
+  }
 }
